@@ -191,4 +191,5 @@ Explanation: The article states that OpenAI has access to more advanced technolo
 
 """
 
-st.code(log)
+with st.expander("explanation"):
+    st.code(log)
