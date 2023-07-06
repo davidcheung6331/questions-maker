@@ -4,6 +4,7 @@ from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.chains import SimpleSequentialChain
+from PIL import Image
 
 
 page_title = "Article and Question Generator"
@@ -24,6 +25,9 @@ hide_menu_style = """
         </style>
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+image = Image.open("article.png")
+st.image(image, caption='created by MJ')
 
 
 st.title(page_title)
