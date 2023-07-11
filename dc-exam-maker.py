@@ -26,7 +26,7 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
-image = Image.open("article.png")
+image = Image.open("questions-answer-banner.jpg")
 st.image(image, caption='created by MJ')
 
 
